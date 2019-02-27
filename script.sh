@@ -35,9 +35,9 @@ echo "jpf-aprop = ${PWD}/jpf-aprop" >> ${SITE_PROPERTIES}
 echo -e '\n\n'
 echo 'extensions=${jpf-core},${jpf-ltl},${jpf-aprop}' >> ${SITE_PROPERTIES}
 
-./jpf-core/bin/jpf ./jpf-core/src/examples/DiningPhil.jpf
-
 mkdir ~/.jpf
 touch ~/.jpf/site.properties
-echo "${PWD}/jpf-core" > ~/.jpf/site.properties
+echo "jpf-core = ${PWD}/jpf-core" > ~/.jpf/site.properties
 echo "extensions=\${jpf-core}" >> ~/.jpf/site.properties
+
+./jpf-core/bin/jpf ./jpf-core/src/examples/DiningPhil.jpf
