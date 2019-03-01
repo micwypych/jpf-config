@@ -5,7 +5,9 @@ mkdir jpf
 cd jpf
 
 wget https://github.com/micwypych/jpf-artifacts/raw/master/jpf/jpf-core-r32.zip
+wget https://github.com/micwypych/jpf-artifacts/raw/master/jpf/jpf-core-r32-src.zip
 unzip ./jpf-core-r32.zip
+echo 'An' | unzip ./jpf-core-r32-src.zip
 
 SITE_PROPERTIES=./site.properties
 
